@@ -26,6 +26,7 @@ export class AppComponent {
     if (!this.loginForm.valid) {
       return;
     }
+    alert('SUCCESS!! :-)\n\n' + JSON.stringify(this.loginForm.value, null, 4));
     console.log(this.loginForm.value);
   }
   

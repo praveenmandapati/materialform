@@ -8,6 +8,8 @@ import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatButtonModule } from '@angular/material/button';
 import { ReactiveFormsModule } from '@angular/forms';
+import { DataserviceService } from './dataservice.service';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent
@@ -20,8 +22,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatFormFieldModule,
     MatButtonModule,
    ReactiveFormsModule,
+   HttpClientModule
   ],
-  providers: [],
+  providers: [DataserviceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
